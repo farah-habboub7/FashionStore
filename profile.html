@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- language -->
+  <meta charset="utf-8" />
+  <!-- Bootstrap Css -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <title>profile page</title>
+  <!-- Mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Icon Box -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <!-- Style Css -->
+  <link href="Style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  
+    <div class="navColor">
+      <!-- ====header==== -->
+      <div class="container-fluid bgColor navColor">
+        <div class="row d-flex mx-md-5 mx-1">
+          <div class="d-flex my-0 mx-md-3 justify-content-end">
+            <div class="me-5 ms-4 d-none d-lg-block text-nowrap">
+              <p class="text-white ali mt-3">
+                <i class="bx bx-envelope fs-5" style="color: #ffffff"></i>
+                Email: Design@nada.com
+              </p>
+            </div>
+            <div class="text-nowrap">
+              <p class="text-white mt-3">
+                <i class="bx bx-phone fs-5" style="color: #ffffff"></i>
+                Phone : (888) 6000 6000 - (888) 6000 6000
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ====end Header==== -->
+
+      <!-- ===Navigation=== -->
+      <nav class="navbar navbar-expand-md shadow bgNavBar">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white mb-1" href="Home.html"
+            ><span class="pColor h2">F</span>ashon's Store</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bx bx-menu" style="color: #f8f3f3"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fw-bold active linkunderline"
+                  href="Home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fw-bold linkunderline"
+                  href="about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fw-bold linkunderline"
+                  href="categories.html"
+                >
+                  Categories</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fw-bold linkunderline"
+                  href="praivcyPolicy.html"
+                  >Praivcy&Policy</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fw-bold linkunderline"
+                  href="contactUs.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex mt-3">
+              <li class="navbar-nav position-relative ms-3">
+                <a class="nav-link" href="Cart.html">
+                  <i class="bx bxs-cart-alt text-white fs-3"></i
+                ></a>
+                <span
+                  class="position-absolute top-25 start-100 translate-middle badge rounded-pill"
+                >
+                  0
+                </span>
+              </li>
+              <li class="navbar-nav position-relative ms-3">
+                <a class="nav-link" href="favorite.html">
+                  <i class="bx bx-heart text-white fs-3"></i
+                ></a>
+                <span
+                  class="position-absolute top-25 start-100 translate-middle badge rounded-pill"
+                >
+                  0
+                </span>
+              </li>
+              <li class="navbar-nav mx-1 fs-5 text-black-50">
+                <a class="nav-link" href="profile.html">
+                  <div class="d-flex">
+                    <i class="bx bx-user text-white fs-3"></i>
+                  </div>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  <!-- Hero Section -->
+  <section class="hero2 bgColor2">
+    <!-- <img src="images/heroOrange.PNG" class="imgHero" alt="" data-aos="fade-in" /> -->
+    <div class="container">
+      <div class="row d-flex justify-content-between">
+        <div class="col-lg-10 mb-5 d-flex h-100">
+          <div class="mx-3 mt-3 line" style="width: 15px; height: 100px; background-color: #273b8489"></div>
+          <h4 class="sColor fw-bold text-nowrap mt-2 title">
+            <span class="text-white"> Profile </span>
+          </h4>
+        </div>
+        <div class="col-12 d-flex justify-content-start">
+          <img src="images/profile.png" class="sideImgHero" />
+        </div>
+        <!-- <div class="col-2 h-100"></div> -->
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+  <div class="container-lg">
+    <div class="row justify-content-around ">
+      <div class="col-md-3 border-circle mt-5 bg-light p-4">
+        <div class="text-center">
+          <img src="images/Person.jpg" width="160" height="150" class="rounded-circle" />
+          <!-- <img src="images/index-video.png" class="border-circle" width="150" height="150"/> -->
+        </div>
+        <p class="fw-bold pColor text-center mt-3">Farah Farah</p>
+        <p class="sColor px-3">Palestinian - Gaza - Al_jalaa</p>
+        <!-- ===Tabs Div=== -->
+        <div class="tab">
+          <button class="tablinks w-100 text-start text-nowrap active" onclick="openTab(event, 'Personal-Information')"
+            id="info-profile">
+            <i class="bx bx-user"></i>
+            Personal Information
+          </button>
+          <button class="tablinks w-100 text-start" onclick="openTab(event, 'Orders')">
+            <i class="bx bx-border-all"></i>
+            Orders
+          </button>
+          <button class="tablinks w-100 text-start" onclick="openTab(event, 'Change-password')">
+            <i class="bx bx-edit"></i>
+            Change password
+          </button>
+          <button class="tablinks w-100 text-start" onclick="openTab(event, 'Log-Out')">
+            <i class="bx bx-log-out"></i>
+            Log Out
+          </button>
+        </div>
+      </div>
+
+      <div class="col-md-8 mt-5  position-relative bg-light">
+        <div id="Personal-Information" class="tabcontent">
+          <h5 class="pColor fw-bold pt-5">View Personal Data</h5>
+          <hr style="height: 5px; width: 55px; color: #273b8489; margin-top: -7px;" />
+          <form method="post" class="form theme-form">
+
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label class=" me-2 sColor">Full Name </label>
+                  <div class="col-md-9">
+                    <input class="form-control" placeholder="Full name">
+                    <span class="text-danger"></span>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label class=" me-2 sColor"> E-Mail </label>
+                  <div class="col-md-9">
+                    <input asp-for="user.Lname" class="form-control" placeholder="Enter yout email">
+                    <span class="text-danger"></span>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label class=" me-2 sColor">Select Country</label>
+                  <div class="col-md-9">
+
+                    <select class="form-control wide rounded-0">
+                      <option value="-1"> Palestinian Territory Occupied </option>
+                      <option value="Palestinian Territory Occupied"> Palestinian Territory Occupied </option>
+                      <option value="Palestinian Territory Occupied"> Palestinian Territory Occupied </option>
+                    </select>
+
+
+                    <span asp-validation-for="user.Specialization" class="text-danger"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label class=" me-2 sColor">Select City</label>
+                  <div class="col-md-9">
+                    <select class="form-control wide rounded-0">
+                      <option value="-1"> Gaza </option>
+                      <option value="Gaza"> Gaza </option>
+                    </select>
+                    <span asp-validation-for="user.Specialization" class="text-danger"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="mb-3">
+                  <label class="me-2 sColor"> Street / Building No. </label>
+                  <div class="col-md-9">
+                    <input class="form-control" placeholder="11 MASHALA ">
+                    <span class="text-danger"></span>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="mb-3">
+                  <label class="me-2 sColor sColor"> Postal Code </label>
+                  <div class="col-md-9">
+                    <input class="form-control" placeholder=" Farah ">
+                    <span class="text-danger"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="mb-3">
+                  <label class=" me-2 sColor">Mobile Number</label>
+                  <div class="col-md-9">
+                    <input type="number" class="form-control" placeholder=" Mobile Number ">
+                    <span class="text-danger"></span>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-6 mt-3">
+                <div class="col-md-9">
+                  <button class="btn_duration2 col-auto fw-bolder d-inline-block w-100 border-0 p-2 text-white">
+                    Update
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </form>
+        </div>
+
+        <div id="Orders" class="tabcontent d-none">
+          <h5 class="pColor fw-bold pt-5">Orders</h5>
+          <hr style="height: 5px; width: 33px; color: #273b8489; margin-top: -7px;" />
+          <div class="table-responsive">
+            <table class="table table-light">
+              <thead class="border-0">
+                <tr class="text-center">
+                  <th>Order Number</th>
+                  <th>Date</th>
+                  <th>Condition</th>
+                  <th>Item Count</th>
+                  <th>Total</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="text-center">
+                  <td>
+                    <p>2288666</p>
+                  </td>
+                  <td>2023-06-12 12:00:35</td>
+                  <td>pending</td>
+                  <td>5 </td>
+                  <td class="fw-bold">$39.9</td>
+                  <td>
+                    <div class="tab">
+                      <button class="tablinks w-100 text-start mb-0 active" onclick="openTab(event, 'Show-Details')">
+                        show details
+                      </button>
+                    </div>
+                    <!-- <button class="btn_duration col-auto fw-bolder d-inline-block w-100 border-0 rounded-3 p-2 text-white">
+                         show details 
+                     </button> -->
+                  </td>
+                </tr>
+                <tr class="text-center">
+                  <td>
+                    <p>2288666</p>
+                  </td>
+                  <td>2023-06-12 12:00:35</td>
+                  <td>pending</td>
+                  <td>5 </td>
+                  <td class="fw-bold">$39.9</td>
+                  <td>
+                    <div class="tab">
+                      <button class="tablinks w-100 text-start mb-0 active" onclick="openTab(event, 'Show-Details')">
+                        show details
+                      </button>
+                    </div>
+                    <!-- <button class="btn_duration col-auto fw-bolder d-inline-block w-100 border-0 rounded-3 p-2 text-white">
+                         show details 
+                     </button> -->
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="Change-password" class="tabcontent d-none">
+          <h5 class="pColor fw-bold pt-5">Change Password</h5>
+          <hr style="height: 5px; width: 55px; color: #273b8489; margin-top: -7px;" />
+          <form method="post" class="form theme-form">
+            <div class="row mt-3">
+              <div class="col-12">
+                <div class="mb-3">
+                  <label class=" me-2 sColor">Old password </label>
+                  <div class="col-md-9">
+                    <input class="form-control" placeholder="Enter your Current Password Please!">
+                    <span class="text-danger"></span>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="mb-3">
+                  <label class=" me-2 sColor">New password</label>
+                  <div class="col-md-9">
+                    <input asp-for="user.Lname" class="form-control" placeholder="Enter your new Password Please!">
+                    <span class="text-danger"></span>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="mb-3">
+                  <label class="me-2 sColor">Confirm password</label>
+                  <div class="col-md-9">
+                    <input class="form-control">
+                    <span class="text-danger"></span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class=" row justify-content-end">
+                <div class="col-4  mt-3 d-flex">
+                  <button class="btn_duration2  fw-bolder d-inline-block w-100 border-0 p-2  text-white">
+                    Save
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </form>
+        </div>
+
+        <div id="Show-Details" class="tabcontent d-none bg-white p-0" style="margin: -13px;">
+          <div class="mb-4">
+            <div class="d-flex justify-content-around align-items-center">
+              <img src="images/Group 98.png" width="100" height="100" />
+              <div>
+                <h6 class="pColor">Order Number: </h6>
+                <p class="sColor">2288666778999000</p>
+              </div>
+              <div>
+                <h6 class="pColor">Date</h6>
+                <p class="sColor">2023-06-12 12:00:35</p>
+              </div>
+              <div>
+                <h6 class="pColor">status</h6>
+                <p class="sColor">pending</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="table-responsive rounded-3">
+            <table class="table table-light">
+              <thead class="border-0">
+                <tr class="text-center">
+                  <th>Image</th>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="text-center">
+                  <td>
+                    <img src="images/hero-bg.png" width="150" height="110" class="rounded-3" />
+                  </td>
+                  <td>dress fashion</td>
+                  <td class="fw-bold">4</td>
+                  <td class="fw-bold">$555</td>
+                  <td class="fw-bold">300$</td>
+                </tr>
+                <tr class="text-center">
+                  <td>
+                    <img src="images/hero-bg.png" width="150" height="110" class="rounded-3" />
+                  </td>
+                  <td>dress fashion</td>
+                  <td class="fw-bold">3</td>
+                  <td class="fw-bold">$200</td>
+                  <td class="fw-bold">300$</td>
+
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+          <div class="d-flex justify-content-end">
+            <div class="col-sm-4 p-3 rounded-3"  style="background-color:#f9bb5e ;">
+              <div class="d-flex justify-content-between">
+                <p class="text-white">Sub Total</p>
+                <p class="text-white">06.00 sra</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="text-white">Deleivery Drive</p>
+                <p class="text-white">06.00 sra</p>
+              </div>
+              <hr />
+              <div class="d-flex justify-content-between TotalP fw-bold">
+                <h6 class="text-start fw-bold text-white">Total</h6>
+                <p class="text-white">78.00 sra</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="Log-Out"
+          class="tabcontent d-none d-flex justify-content-center position-absolute top-50 start-50 translate-middle">
+          <div>
+            <h4 class="sColor">Are you sure you want to get out?!</h4>
+            <div class="d-flex justify-content-around mt-5">
+              <button class="btn_duration col-auto fw-bolder  w-25 border-0 p-2 text-white rounded ">
+                Yes
+              </button>
+              <button class="btn btn-outline text-center text-nowrap fw-bold  w-25  p-2 ">
+                No
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- footer -->
+  <div class="fables-footer-image fables-after-overlay white-color py-4 py-lg-5 bg-rules mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+          <h4 class="font-20 semi-font fables-second-border-color border-bottom pb-3 text-white">
+            <span style="color: #e88b25; font-weight: bold">F</span>ashon's
+            Store
+          </h4>
+
+          <p class="font-15 fables-third-text-color text-white">
+            t is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The
+            point of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters
+          </p>
+        </div>
+
+        <div class="col-12 col-sm-3 col-lg-4">
+          <h4 class="font-20 semi-font fables-second-border-color border-bottom pb-3 text-white">
+            Contact us
+          </h4>
+
+          <div class="my-3">
+            <div class="row">
+              <div class="col-1">
+                <i class="bx bx-phone fs-4" style="color: #ffffff"></i>
+              </div>
+              <div class="col-11">
+                <h6 class="font-16 semi-font text-white">
+                  <span class="fables-iconphone fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span>
+                  Call Now
+                </h6>
+                <p class="font-14 fables-fifth-text-color mt-2 ml-4 text-white">
+                  (888) 6000 6000 - (888) 6000 6000
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="my-3">
+            <div class="row">
+              <div class="col-1">
+                <img style="width: 20px; height: 20px" src="images/email.svg" />
+              </div>
+              <div class="col-11">
+                <h6 class="font-16 semi-font text-white">
+                  <span class="fables-iconphone fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span>
+                  Mail
+                </h6>
+                <p class="font-14 fables-fifth-text-color mt-2 ml-4 text-white">
+                  Email: Design@nada.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-3 col-lg-4">
+          <h4 class="font-20 semi-font fables-second-border-color border-bottom pb-3 mb-3 text-white">
+            EXPLORE OUR SITE
+          </h4>
+          <ul class="nav fables-footer-links text-white">
+            <li><a href="about1.html">Home</a></li>
+            <li><a href="contactus1.html">About</a></li>
+            <li><a href="gallery.html">Categories</a></li>
+            <li><a href="team.html">Contact Us</a></li>
+            <li><a href="blog.html">Praivcy&Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="background-color: #273b84">
+    <div class="copyright fables-main-background-color mt-0 border-0 white-color text-white">
+      <div class="d-flex justify-content-center pt-3">
+        <img style="width: 30px; height: 30px; margin-right: 5px" src="images/facebook.png" />
+        <img style="width: 30px; height: 30px; margin-right: 5px" src="images/twitter.png" />
+        <img style="width: 30px; height: 30px; margin-right: 5px" src="images/instagram.png" />
+        <img style="width: 30px; height: 30px; margin-right: 5px" src="images/linkedin.png" />
+      </div>
+      <div class="d-flex justify-content-center">
+        <p class="mb-0">Copyright © Store 2023. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+  <!-- end footer -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    function repeatCard() {
+      let rowForCardLoop = document.getElementById("rowForCardLoop");
+      let cardLoop = document.getElementById("cardLoop");
+      let array = [];
+      for (let i = 0; i <= 2; i++) {
+        let newCard = cardLoop.cloneNode(true);
+        cardLoop.after(newCard);
+        array.push(newCard);
+      }
+    }
+    repeatCard();
+    console.log(cardLoop);
+    console.log(rowForCardLoop);
+
+    ///Tab
+    function openTab(evt, TabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        if (tabcontent[i].id !== TabName) {
+          tabcontent[i].classList.add("d-none");
+          tabcontent[i].classList.remove("d-block");
+        } else {
+          tabcontent[i].classList.add("d-block");
+          tabcontent[i].classList.remove("d-none");
+        }
+        console.log(tabcontent[i]);
+        console.log(evt);
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+
+      evt.currentTarget.classList.add("active");
+    }
+  </script>
+</body>
+
+</html>

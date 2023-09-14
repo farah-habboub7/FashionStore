@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- language -->
+    <meta charset="utf-8" />
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <title>proudcts details</title>
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon Box -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Style Css -->
+    <link href="Style.css" rel="stylesheet" />
+  </head>
+  <style>
+    .form-option-label {
+      border: 3px solid transparent;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="navColor">
+      <!-- ====header==== -->
+      <div class="container-fluid bgColor navColor">
+        <div class="row d-flex mx-md-5 mx-1">
+          <div class="d-flex my-0 mx-md-3 justify-content-end">
+            <div class="me-5 ms-4 d-none d-lg-block text-nowrap">
+              <p class="text-white ali mt-3">
+                <i class="bx bx-envelope fs-5" style="color: #ffffff"></i>
+                Email: Design@nada.com
+              </p>
+            </div>
+            <div class="text-nowrap">
+              <p class="text-white mt-3">
+                <i class="bx bx-phone fs-5" style="color: #ffffff"></i>
+                Phone : (888) 6000 6000 - (888) 6000 6000
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ====end Header==== -->
+
+      <!-- ===Navigation=== -->
+      <nav class="navbar navbar-expand-md shadow bgNavBar">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white mb-1" href="Home.html"
+            ><span class="pColor h2">F</span>ashon's Store</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bx bx-menu" style="color: #f8f3f3"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fw-bold active linkunderline"
+                  href="Home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fw-bold linkunderline"
+                  href="about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fw-bold linkunderline"
+                  href="categories.html"
+                >
+                  Categories</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fw-bold linkunderline"
+                  href="praivcyPolicy.html"
+                  >Praivcy&Policy</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fw-bold linkunderline"
+                  href="contactUs.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex mt-3">
+              <li class="navbar-nav position-relative ms-3">
+                <a class="nav-link" href="Cart.html">
+                  <i class="bx bxs-cart-alt text-white fs-3"></i
+                ></a>
+                <span
+                  class="position-absolute top-25 start-100 translate-middle badge rounded-pill"
+                >
+                  0
+                </span>
+              </li>
+              <li class="navbar-nav position-relative ms-3">
+                <a class="nav-link" href="favorite.html">
+                  <i class="bx bx-heart text-white fs-3"></i
+                ></a>
+                <span
+                  class="position-absolute top-25 start-100 translate-middle badge rounded-pill"
+                >
+                  0
+                </span>
+              </li>
+              <li class="navbar-nav mx-1 fs-5 text-black-50">
+                <a class="nav-link" href="profile.html">
+                  <div class="d-flex">
+                    <i class="bx bx-user text-white fs-3"></i>
+                  </div>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero2 bgColor2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mb-5 d-flex">
+            <div
+              class="mx-4 mt-3 line"
+              style="width: 15px; height: 100px; background-color: #273b8489"
+            ></div>
+            <h4 class="sColor fw-bold text-nowrap mt-2 title">
+              <span class="text-white"> proudcts</span> details
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- sDiv -->
+    <div class="container-fluid sDiv">
+      <div class="text-black-50 py-2 ms-5">
+        <span class="pColor fw-bold">home</span>/ store proudcts list
+      </div>
+    </div>
+
+    <!-- ProductDetails -->
+    <div class="container-fluid my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div>
+            <img
+              src="images/hero-bg.png"
+              alt=""
+              class="w-100 h-100 rounded-3 object-fit-cover"
+            />
+          </div>
+        </div>
+        <div class="col-12 col-xl-8 col-xxl-6 mx-5 mt-4">
+          <div class="d-flex justify-content-between">
+            <h2 class="sColor">Product Title</h2>
+            <div>
+              <h3 class="fw-bold pColor">3500$</h3>
+            </div>
+          </div>
+
+          <h5 class="text-black-50">COLORS :</h5>
+          <!-- <div class="form-check-inline me-1">
+            <input
+              class="form-check-input position-absolute opacity-0"
+              wire:model="color"
+              wire:change="changeconstant(48)"
+              type="radio"
+              id="color_48"
+              value="#4B5C7A"
+            />
+            <label class="form-option-label rounded-circle" for="color48"
+              ><span
+                class="form-option-color rounded-circle border border-secondary"
+                style="background-color: #4b5c7a"
+              ></span
+            ></label>
+            <input
+              class="form-check-input position-absolute opacity-0"
+              wire:model="color"
+              wire:change="changeconstant(48)"
+              type="radio"
+              id="color_48"
+              value="#47B04B"
+            />
+            <label class="form-option-label rounded-circle" for="color48"
+              ><span
+                class="form-option-color rounded-circle border border-secondary"
+                style="background-color: #47b04b"
+              ></span
+            ></label>
+            <input
+              class="form-check-input position-absolute opacity-0"
+              wire:model="color"
+              wire:change="changeconstant(48)"
+              type="radio"
+              id="color_48"
+              value="#0D1218"
+            />
+            <label class="form-option-label rounded-circle" for="color48"
+              ><span
+                class="form-option-color rounded-circle border border-secondary"
+                style="background-color: #0d1218"
+              ></span
+            ></label>
+            <input
+              class="form-check-input position-absolute opacity-0"
+              wire:model="color"
+              wire:change="changeconstant(48)"
+              type="radio"
+              id="color_48"
+              value="#676670"
+            />
+            <label class="form-option-label rounded-circle" for="color48"
+              ><span
+                class="form-option-color rounded-circle border border-secondary"
+                style="background-color: #676670"
+              ></span
+            ></label>
+            <input
+              class="form-check-input position-absolute opacity-0"
+              wire:model="color"
+              wire:change="changeconstant(48)"
+              type="radio"
+              id="color_48"
+              value="#D77A41"
+            />
+            <label class="form-option-label rounded-circle" for="color48"
+              ><span
+                class="form-option-color rounded-circle border border-secondary"
+                style="background-color: #d77a41"
+              ></span
+            ></label>
+            <input
+              class="form-check-input position-absolute opacity-0"
+              wire:model="color"
+              wire:change="changeconstant(48)"
+              type="radio"
+              id="color_48"
+              value="#9F0C1E"
+            />
+            <label class="form-option-label rounded-circle" for="color48"
+              ><span
+                class="form-option-color rounded-circle border border-secondary"
+                style="background-color: #9f0c1e"
+              ></span
+            ></label>
+            <input
+              class="form-check-input position-absolute opacity-0"
+              wire:model="color"
+              wire:change="changeconstant(48)"
+              type="radio"
+              id="color_48"
+              value="#B46868"
+            />
+            <label class="form-option-label rounded-circle" for="color48"
+              ><span
+                class="form-option-color rounded-circle border border-secondary"
+                style="background-color: #b46868"
+              ></span
+            ></label>
+          </div> -->
+          <h5 class="text-black-50">SIZE :</h5>
+          <div class="form-check">
+            <div class="d-md-flex justify-content-between">
+              <div class="d-sm-flex mt-3">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    value="small"
+                    id="flexCheckChecked"
+                    name="SIZE"
+                  />
+                  <label class="form-check-label sColor" for="flexCheckChecked">
+                    small
+                  </label>
+                </div>
+                <div class="form-check ms-3">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    value="medium "
+                    id="flexCheckChecked"
+                    name="SIZE"
+                  />
+                  <label class="form-check-label sColor" for="flexCheckChecked">
+                    medium
+                  </label>
+                </div>
+                <div class="form-check ms-3">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    value="large "
+                    id="flexCheckChecked"
+                    name="SIZE"
+                  />
+                  <label class="form-check-label sColor" for="flexCheckChecked">
+                    large
+                  </label>
+                </div>
+                <div class="form-check ms-3">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    value="xlarge "
+                    id="flexCheckChecked"
+                    name="SIZE"
+                  />
+                  <label class="form-check-label sColor" for="flexCheckChecked">
+                    xlarge
+                  </label>
+                </div>
+              </div>
+              <div class="d-flex mt-3">
+                <button
+                  class="btn btn-outline text-center text-nowrap fw-bold d-inline-block rounded-pill px-5"
+                >
+                  Add To card
+                </button>
+                <a class="text-decoration-none">
+                  <button class="button-product fw-bolder border-0">
+                    <i class="bx bxs-heart p-2 fs-5 iCart2"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end align-items-center gap-3">
+            <!-- <p class="fw-bold text-danger fs-4">الكمية</p> -->
+            <!-- <div class="d-flex">
+              <button
+                class="button-product rounded-circle border-0 fs-5 px-2"
+                id="btn-increase-quantity"
+              >
+                <i class="bx bx-plus iproduct p-1"></i>
+              </button>
+              <input
+                title="quantity"
+                class="form-control w-auto rounded-0 mt-3"
+                style="max-width: 37px; background-color: transparent"
+                id="quantity"
+                min="0"
+                value="0"
+                readonly
+              />
+              <button
+                class="button-product rounded-circle border-0 fs-5 px-2"
+                id="btn-decrease-quantity"
+              >
+                <i class="bx bx-minus iproduct p-1"></i>
+              </button>
+            </div> -->
+          </div>
+
+          <nav class="navbar navbar-expand m-0">
+            <div
+              class="collapse navbar-collapse g-0 justify-content-center mt-4"
+              style="margin-right: -55px"
+            >
+              <ul class="navbar-nav">
+                <li class="navbar-nav mx-1">
+                  <a
+                    class="nav-link rounded-circle"
+                    target="_blank"
+                    href="https://www.facebook.com/"
+                    style="background-color: #4267b2"
+                  >
+                    <img src="images/facebook.png" width="22" height="22"
+                  /></a>
+                </li>
+
+                <li class="navbar-nav mx-1">
+                  <a
+                    class="nav-link rounded-circle bg-danger"
+                    target="_blank"
+                    href="#"
+                    ><img src="images/pinterest.svg" width="22" height="22"
+                  /></a>
+                </li>
+                <li class="navbar-nav mx-1">
+                  <a
+                    class="nav-link rounded-circle bg-secondary"
+                    target="_blank"
+                    href="#"
+                    ><img src="images/email.svg" width="22" height="22"
+                  /></a>
+                </li>
+                <li class="navbar-nav mx-1">
+                  <a
+                    class="nav-link rounded-circle bg-Warning"
+                    target="_blank"
+                    href="#"
+                    style="background-color: #95d03a"
+                    ><img src="images/sharethis.svg" width="22" height="22"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===Tabs Div=== -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="tab">
+            <button
+              class="tablinks active"
+              onclick="openTab(event, 'information-profile')"
+              id="info-profile"
+              style="border-radius: 50px 0 0 50px"
+            >
+              description
+            </button>
+            <button
+              class="tablinks"
+              onclick="openTab(event, 'Password')"
+              style="border-radius: 0 50px 50px 0; margin-left: -6px"
+            >
+              Evaluation
+            </button>
+          </div>
+
+          <div id="information-profile" class="tabcontent">
+            <p>
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin
+              professor at Hampden-Sydney College in Virginia, looked up one of
+              the more obscure Latin words, consectetur, from a Lorem Ipsum
+              passage, and going through the cites of the word in classical
+              literature, discovered the undoubtable source. Lorem Ipsum comes
+              from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+              Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
+              BC. This book is a treatise on the theory of ethics, very popular
+              during the Renaissance. The first line of Lorem Ipsum, "Lorem
+              ipsum dolor sit amet..", comes from a line in section 1.10.32. The
+              standard chunk of Lorem Ipsum used since the 1500s is reproduced
+              below for those interested. Sections 1.10.32 and 1.10.33 from "de
+              Finibus Bonorum et Malorum" by Cicero are also reproduced in their
+              exact original form, accompanied by English versions from the 1914
+              translation by H. Rackham.
+            </p>
+          </div>
+
+          <div id="Password" class="tabcontent d-none">
+            <div class="container">
+              <div class="row">
+                <div class="col-3 text-center mt-4">
+                  <h2 class="sColor fw-bold text">0</h2>
+                  <div class="rating d-flex justify-content-center">
+                    <div class="rating position-relative">
+                      <div class="rating-upper d-flex">
+                        <i class="bx bxs-star fs-5 sColor"></i>
+                        <i class="bx bxs-star fs-5 sColor"></i>
+                        <i class="bx bxs-star fs-5 sColor"></i>
+                        <i class="bx bxs-star fs-5 sColor"></i>
+                        <i class="bx bxs-star fs-5 sColor"></i>
+                        <i class="bx bxs-star fs-5 sColor"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="sColor">
+                    <i class="bx bxs-user sColor mt-3"></i>
+                    1 opinions
+                  </p>
+                </div>
+                <div class="col-5">
+                  <div class="d-flex">
+                    <i class="bx bxs-star pColor fs-4"></i>
+                    <p class="me-2">1</p>
+
+                    <input
+                      type="range"
+                      class="form-range"
+                      min="0"
+                      max="5"
+                      id="customRange2"
+                    />
+                  </div>
+                  <div class="d-flex">
+                    <i class="bx bxs-star pColor fs-4"></i>
+                    <p class="me-2">2</p>
+
+                    <input
+                      type="range"
+                      class="form-range"
+                      min="0"
+                      max="5"
+                      id="customRange2"
+                    />
+                  </div>
+                  <div class="d-flex">
+                    <i class="bx bxs-star pColor fs-4"></i>
+                    <p class="me-2">3</p>
+
+                    <input
+                      type="range"
+                      class="form-range"
+                      min="0"
+                      max="5"
+                      id="customRange2"
+                    />
+                  </div>
+                  <div class="d-flex">
+                    <i class="bx bxs-star pColor fs-4"></i>
+                    <p class="me-2">4</p>
+
+                    <input
+                      type="range"
+                      class="form-range"
+                      min="0"
+                      max="5"
+                      id="customRange2"
+                    />
+                  </div>
+                  <div class="d-flex">
+                    <i class="bx bxs-star pColor fs-4"></i>
+                    <p class="me-2">5</p>
+
+                    <input
+                      type="range"
+                      class="form-range"
+                      min="0"
+                      max="5"
+                      id="customRange2"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sDiv2 -->
+    <div class="container-fluid sDiv">
+      <div class="sColor py-3 text-center fw-bold">Related Products</div>
+    </div>
+
+    <!-- == Shopping Card1 == -->
+    <div class="container-lg mt-4">
+      <div class="row justify-content-center" id="rowForCardLoop">
+        <div class="col-lg-3 col-sm-5 mt-3" id="cardLoop">
+          <div class="card">
+            <div class="position-relative w-100 h-100">
+              <img
+                src="images/mic.png"
+                class="card-img-top"
+                alt="..."
+                height="200"
+              />
+              <div
+                class="position-absolute detailsbox w-100 h-100 top-0 start-0"
+              >
+                <div
+                  class="d-flex justify-content-center align-items-center h-100"
+                >
+                  <button class="button-product fw-bolder border-0">
+                    <i class="bx bxs-heart p-2 fs-4 iproduct"></i>
+                  </button>
+                  <button class="button-product fw-bolder border-0">
+                    <i class="bx bx-show p-2 fs-4 iproduct"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="fw-bold">dress fashion</p>
+                </div>
+
+                <p class="fw-bold pColor">$ 98.00</p>
+              </div>
+              <p class="text-black-50 text-start" style="font-size: 12px">
+                LUIS LEATHER DRIVING MOCCASINS FROM DRIVING DRIVING ... DOUBLE
+              </p>
+              <div class="d-flex justify-content-center">
+                <button
+                  class="btn btn-outline text-center text-nowrap fw-bold d-inline-block mt-4 rounded-pill px-5 py-1"
+                >
+                  Add To card
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div
+      class="fables-footer-image fables-after-overlay white-color py-4 py-lg-5 bg-rules mt-5"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+            <h4
+              class="font-20 semi-font fables-second-border-color border-bottom pb-3 text-white"
+            >
+              <span style="color: #e88b25; font-weight: bold">F</span>ashon's
+              Store
+            </h4>
+
+            <p class="font-15 fables-third-text-color text-white">
+              t is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters
+            </p>
+          </div>
+
+          <div class="col-12 col-sm-3 col-lg-4">
+            <h4
+              class="font-20 semi-font fables-second-border-color border-bottom pb-3 text-white"
+            >
+              Contact us
+            </h4>
+
+            <div class="my-3">
+              <div class="row">
+                <div class="col-1">
+                  <i class="bx bx-phone fs-4" style="color: #ffffff"></i>
+                </div>
+                <div class="col-11">
+                  <h6 class="font-16 semi-font text-white">
+                    <span
+                      class="fables-iconphone fables-second-text-color pr-2 font-20 mt-1 d-inline-block"
+                    ></span>
+                    Call Now
+                  </h6>
+                  <p
+                    class="font-14 fables-fifth-text-color mt-2 ml-4 text-white"
+                  >
+                    (888) 6000 6000 - (888) 6000 6000
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="my-3">
+              <div class="row">
+                <div class="col-1">
+                  <img
+                    style="width: 20px; height: 20px"
+                    src="images/email.svg"
+                  />
+                </div>
+                <div class="col-11">
+                  <h6 class="font-16 semi-font text-white">
+                    <span
+                      class="fables-iconphone fables-second-text-color pr-2 font-20 mt-1 d-inline-block"
+                    ></span>
+                    Mail
+                  </h6>
+                  <p
+                    class="font-14 fables-fifth-text-color mt-2 ml-4 text-white"
+                  >
+                    Email: Design@nada.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-3 col-lg-4">
+            <h4
+              class="font-20 semi-font fables-second-border-color border-bottom pb-3 mb-3 text-white"
+            >
+              EXPLORE OUR SITE
+            </h4>
+            <ul class="nav fables-footer-links text-white">
+              <li><a href="about1.html">Home</a></li>
+              <li><a href="contactus1.html">About</a></li>
+              <li><a href="gallery.html">Categories</a></li>
+              <li><a href="team.html">Contact Us</a></li>
+              <li><a href="blog.html">Praivcy&Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background-color: #273b84">
+      <div
+        class="copyright fables-main-background-color mt-0 border-0 white-color text-white"
+      >
+        <div class="d-flex justify-content-center pt-3">
+          <img
+            style="width: 30px; height: 30px; margin-right: 5px"
+            src="images/facebook.png"
+          />
+          <img
+            style="width: 30px; height: 30px; margin-right: 5px"
+            src="images/twitter.png"
+          />
+          <img
+            style="width: 30px; height: 30px; margin-right: 5px"
+            src="images/instagram.png"
+          />
+          <img
+            style="width: 30px; height: 30px; margin-right: 5px"
+            src="images/linkedin.png"
+          />
+        </div>
+        <div class="d-flex justify-content-center">
+          <p class="mb-0">Copyright © Store 2023. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+    <!-- end footer -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      function repeatCard() {
+        let rowForCardLoop = document.getElementById("rowForCardLoop");
+        let cardLoop = document.getElementById("cardLoop");
+        let array = [];
+        for (let i = 0; i <= 2; i++) {
+          let newCard = cardLoop.cloneNode(true);
+          cardLoop.after(newCard);
+          array.push(newCard);
+        }
+      }
+      repeatCard();
+      console.log(cardLoop);
+      console.log(rowForCardLoop);
+
+      ///Tab
+      function openTab(evt, TabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          if (tabcontent[i].id !== TabName) {
+            tabcontent[i].classList.add("d-none");
+            tabcontent[i].classList.remove("d-block");
+          } else {
+            tabcontent[i].classList.add("d-block");
+            tabcontent[i].classList.remove("d-none");
+          }
+          console.log(tabcontent[i]);
+          console.log(evt);
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active");
+        }
+
+        evt.currentTarget.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

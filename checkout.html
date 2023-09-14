@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- language -->
+    <meta charset="utf-8" />
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <title>Checkout</title>
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon Box -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Style Css -->
+    <link href="Style.css" rel="stylesheet" />
+  </head>
+  <style>
+    .form-option-label {
+      border: 3px solid transparent;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="navColor mb-4">
+      <!-- ====header==== -->
+      <div class="container-fluid bgColor navColor">
+        <div class="row d-flex mx-md-5 mx-1">
+          <div class="d-flex my-0 mx-md-3 justify-content-end">
+            <div class="me-5 ms-4 d-none d-lg-block text-nowrap">
+              <p class="text-white ali mt-3">
+                <i class="bx bx-envelope fs-5" style="color: #ffffff"></i>
+                Email: Design@nada.com
+              </p>
+            </div>
+            <div class="text-nowrap">
+              <p class="text-white mt-3">
+                <i class="bx bx-phone fs-5" style="color: #ffffff"></i>
+                Phone : (888) 6000 6000 - (888) 6000 6000
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ====end Header==== -->
+
+      <!-- ===Navigation=== -->
+      <nav class="navbar navbar-expand-md shadow bgNavBar">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white mb-1" href="Home.html"
+            ><span class="pColor h2">F</span>ashon's Store</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bx bx-menu" style="color: #f8f3f3"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fw-bold active linkunderline"
+                  href="Home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fw-bold linkunderline"
+                  href="about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fw-bold linkunderline"
+                  href="categories.html"
+                >
+                  Categories</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fw-bold linkunderline"
+                  href="praivcyPolicy.html"
+                  >Praivcy&Policy</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fw-bold linkunderline"
+                  href="contactUs.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex mt-3">
+              <li class="navbar-nav position-relative ms-3">
+                <a class="nav-link" href="Cart.html">
+                  <i class="bx bxs-cart-alt text-white fs-3"></i
+                ></a>
+                <span
+                  class="position-absolute top-25 start-100 translate-middle badge rounded-pill"
+                >
+                  0
+                </span>
+              </li>
+              <li class="navbar-nav position-relative ms-3">
+                <a class="nav-link" href="favorite.html">
+                  <i class="bx bx-heart text-white fs-3"></i
+                ></a>
+                <span
+                  class="position-absolute top-25 start-100 translate-middle badge rounded-pill"
+                >
+                  0
+                </span>
+              </li>
+              <li class="navbar-nav mx-1 fs-5 text-black-50">
+                <a class="nav-link" href="profile.html">
+                  <div class="d-flex">
+                    <i class="bx bx-user text-white fs-3"></i>
+                  </div>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container mt-5">
+      <h2 class="pColor fw-bold">Checkout</h2>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mt-5">
+          <h5 class="sColor fw-bold">Cart Items</h5>
+          <hr />
+          <div class="row">
+            <div class="col-md-3">
+              <img src="images/hero-bg.png" class="w-100 h-100 rounded-3" />
+            </div>
+            <div class="col-md-5">
+              <h6 class="sColor">Men Shirt Available</h6>
+              <p class="sColor">Hamada Store</p>
+              <p class="pColor fw-bold">Total 100 USD</p>
+            </div>
+          </div>
+          <hr class="w-50" />
+          <div class="row">
+            <div class="col-md-3">
+              <img src="images/hero-bg.png" class="w-100 h-100 rounded-3" />
+            </div>
+            <div class="col-md-5">
+              <h6 class="sColor">Men Shirt Available</h6>
+              <p class="sColor">Hamada Store</p>
+              <p class="pColor fw-bold">Total 100 USD</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 mt-5">
+          <h5 class="sColor fw-bold">Shipping Information</h5>
+          <hr />
+          <div class="p-0 g-0 d-flex d-none">
+            <input
+              type="text"
+              class="form-control shadow-sm w-75"
+              placeholder="Enter The Code "
+            />
+            <button
+              class="btn_duration text-white border-0 ms-4 px-4 h-75 py-2"
+            >
+              Confirm
+            </button>
+          </div>
+
+          <!-- radio -->
+          <div class="mt-3 d-md-flex justify-content-between">
+            <div>
+              <h6 class="mb-3 pColor fw-bold">Payment Geteway</h6>
+
+              <div class="bg-white px-3 rounded-3">
+                <input
+                  value="Card"
+                  name="Payment"
+                  type="radio"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                  required
+                />
+                <label class="form-check-label d-inline" for="exampleCheck1">
+                  <i class="bx bxs-credit-card" style="color: #668692"></i>
+                  <span>Credits Card</span>
+                </label>
+              </div>
+
+              <div class="bg-white px-3 rounded-3">
+                <input
+                  value="Cash"
+                  name="Payment"
+                  type="radio"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                  required
+                />
+                <label class="form-check-label" for="exampleCheck1">
+                  <i class="bx bx-money" style="color: #7ec8a3"></i>
+                  Cash</label
+                >
+              </div>
+            </div>
+            <div>
+              <h6 class="ms-4 mb-3 pColor fw-bold ms-5">Delivery Method</h6>
+              <div class="bg-white px-3 rounded-3 ms-md-4">
+                <input
+                  value="Store"
+                  name="Delivery"
+                  type="radio"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                  required
+                />
+                <label class="form-check-label sColor" for="exampleCheck1"
+                  >From Store</label
+                >
+              </div>
+              <div class="bg-white px-3 rounded-3 ms-4">
+                <input
+                  value="Delivery"
+                  name="Delivery"
+                  type="radio"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                  required
+                />
+                <label class="form-check-label sColor" for="exampleCheck1"
+                  >By Delivery</label
+                >
+              </div>
+            </div>
+          </div>
+          <!-- end Radio -->
+          <div class="mt-5">
+            <div class="mb-3">
+              <label for="exampleInputDelivery" class="form-label">
+                <h6 class="pColor fw-bold">Delivery To Address</h6></label
+              >
+              <div class="d-flex">
+                <select
+                  class="form-select shadow-sm w-75"
+                  aria-label="Default select example "
+                  required
+                >
+                  <option selected>Gaza</option>
+                  <option value="Gaza">Gaza</option>
+                  <option value="Ramala">Ramala</option>
+                  <option value="Alajaa">Alajaa</option>
+                </select>
+                <button
+                  class="btn_duration2 fw-bolder d-inline-block border-0 p-2 text-white"
+                >
+                  <i class="bx bx-plus p-1"></i>
+                </button>
+              </div>
+            </div>
+            <div class="d-flex">
+              <button
+                class="btn_duration col-auto fw-bolder d-inline-block w-25 border-0 p-2 text-white"
+              >
+                Confirm
+              </button>
+            </div>
+            <!-- <div class="justify-content-center mt-5">
+              <button class="btn text-white border-0 w-75">Confirm</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div
+      class="fables-footer-image fables-after-overlay white-color py-4 py-lg-5 bg-rules mt-5"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+            <h4
+              class="font-20 semi-font fables-second-border-color border-bottom pb-3 text-white"
+            >
+              <span style="color: #e88b25; font-weight: bold">F</span>ashon's
+              Store
+            </h4>
+
+            <p class="font-15 fables-third-text-color text-white">
+              t is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters
+            </p>
+          </div>
+
+          <div class="col-12 col-sm-3 col-lg-4">
+            <h4
+              class="font-20 semi-font fables-second-border-color border-bottom pb-3 text-white"
+            >
+              Contact us
+            </h4>
+
+            <div class="my-3">
+              <div class="row">
+                <div class="col-1">
+                  <i class="bx bx-phone fs-4" style="color: #ffffff"></i>
+                </div>
+                <div class="col-11">
+                  <h6 class="font-16 semi-font text-white">
+                    <span
+                      class="fables-iconphone fables-second-text-color pr-2 font-20 mt-1 d-inline-block"
+                    ></span>
+                    Call Now
+                  </h6>
+                  <p
+                    class="font-14 fables-fifth-text-color mt-2 ml-4 text-white"
+                  >
+                    (888) 6000 6000 - (888) 6000 6000
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="my-3">
+              <div class="row">
+                <div class="col-1">
+                  <img
+                    style="width: 20px; height: 20px"
+                    src="images/email.svg"
+                  />
+                </div>
+                <div class="col-11">
+                  <h6 class="font-16 semi-font text-white">
+                    <span
+                      class="fables-iconphone fables-second-text-color pr-2 font-20 mt-1 d-inline-block"
+                    ></span>
+                    Mail
+                  </h6>
+                  <p
+                    class="font-14 fables-fifth-text-color mt-2 ml-4 text-white"
+                  >
+                    Email: Design@nada.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-3 col-lg-4">
+            <h4
+              class="font-20 semi-font fables-second-border-color border-bottom pb-3 mb-3 text-white"
+            >
+              EXPLORE OUR SITE
+            </h4>
+            <ul class="nav fables-footer-links text-white">
+              <li><a href="about1.html">Home</a></li>
+              <li><a href="contactus1.html">About</a></li>
+              <li><a href="gallery.html">Categories</a></li>
+              <li><a href="team.html">Contact Us</a></li>
+              <li><a href="blog.html">Praivcy&Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background-color: #273b84">
+      <div
+        class="copyright fables-main-background-color mt-0 border-0 white-color text-white"
+      >
+        <div class="d-flex justify-content-center pt-3">
+          <img
+            style="width: 30px; height: 30px; margin-right: 5px"
+            src="images/facebook.png"
+          />
+          <img
+            style="width: 30px; height: 30px; margin-right: 5px"
+            src="images/twitter.png"
+          />
+          <img
+            style="width: 30px; height: 30px; margin-right: 5px"
+            src="images/instagram.png"
+          />
+          <img
+            style="width: 30px; height: 30px; margin-right: 5px"
+            src="images/linkedin.png"
+          />
+        </div>
+        <div class="d-flex justify-content-center">
+          <p class="mb-0">Copyright © Store 2023. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+    <!-- end footer -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
