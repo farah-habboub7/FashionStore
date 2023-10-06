@@ -1,4 +1,4 @@
 # An illustration of the site in screens of different sizes
  FashionStore
- 
- ![Hero](https://github.com/farah-habboub7/FashionStore/assets/111410550/88ab0634-a322-4719-853e-39cd68863bbb)
+
+![Fashon](https://github.com/farah-habboub7/FashionStore/assets/111410550/340c7834-fa6a-4ab7-9eff-4f2903d243ab)
